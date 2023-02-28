@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "892764696805",
+    "project_id": "chatgtp-7c444",
+    "storage_bucket": "chatgtp-7c444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892764696805:android:fe745db4f5d21e623de40c",
+        "android_client_info": {
+          "package_name": "com.example.chatgtp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892764696805-1koiu4ua3aj37ulmq4igebfa3hbtqccd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLd2cuSWxJr3352_vOJSShOJbcUug0360"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892764696805-1koiu4ua3aj37ulmq4igebfa3hbtqccd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

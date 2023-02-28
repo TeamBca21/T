@@ -7,56 +7,36 @@
     android:background="@drawable/bg1"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".RegistrationActivity">
+    tools:context=".LoginActivity">
 
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/userImg"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="50dp"
-        android:src="@drawable/ic_baseline_person_24"
-        app:civ_border_color="@color/white"
-        app:civ_border_width="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginTop="171dp"
-        android:layout_marginBottom="188dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userImg"
-        app:layout_constraintVertical_bias="0.189">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718">
 
-        <EditText
-            android:id="@+id/etName"
+        <TextView
+            android:id="@+id/txt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:background="#30f0ffff"
-            android:drawableStart="@drawable/ic_baseline_person_24"
-            android:drawablePadding="15dp"
-            android:hint="Name"
-            android:inputType="textEmailAddress"
-            android:padding="7dp"
-            android:textColor="#f0ffff"
-            android:textColorHint="#f0ffff" />
-
+            android:text="Login"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/alegreya_sc"
+            />
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#30f0ffff"
@@ -70,7 +50,7 @@
 
 
         <EditText
-            android:id="@+id/etPass"
+            android:id="@+id/etPassLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -84,15 +64,15 @@
             android:textColorHint="#f0ffff" />
 
         <Button
-            android:id="@+id/btnREg"
+            android:id="@+id/btnLogin"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="#07105C"
             android:padding="7dp"
-            android:text="Registr"
-            android:textSize="17dp"
+            android:text="Login"
+            android:textSize="20dp"
             android:textColor="#f0ffff" />
 
         <LinearLayout
@@ -105,20 +85,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="new_user"
+                android:text="Already Have"
                 android:fontFamily="@font/alegreya_sc"
                 android:textColor="#f0ffff"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txtLogin"
+                android:id="@+id/txtReg"
                 android:fontFamily="@font/alegreya_sc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:clickable="true"
                 android:focusable="true"
-                android:text="login_here"
+                android:text="Account !"
                 android:textColor="#0000ff"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -127,6 +107,33 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="303dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/robot2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.875" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
