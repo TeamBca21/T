@@ -6,13 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idITLQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner"
+            android:backgroundTint="#A8A6AC"
+            android:hint="Type Your Question ..."
+            android:imeOptions="actionSend"
+            android:padding="5dp"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idEtQuery"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:drawableEnd="@drawable/ic_baseline_send_24"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner"
+                android:backgroundTint="#A8A6AC"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:imeOptions="actionSend"
+                android:padding="5dp"
+                android:text="fbvk"
+                android:textColorHint="@color/black"
+                android:textSize="16dp"
+                app:hintTextColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="409dp"
+        android:layout_height="680dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

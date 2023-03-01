@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@color/black"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".RegistrationActivity">
@@ -12,8 +12,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/userImg"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="114dp"
         android:layout_centerInParent="true"
         android:layout_marginBottom="50dp"
         android:src="@drawable/ic_baseline_person_24"
